@@ -9,9 +9,7 @@ const aiChatRoutes = require("./routes/ai.chat.routes")
 
 app.use(cors({
 	origin: [
-	  "http://localhost:5173",
-	  "http://10.119.227.36:5173",
-	  "http://192.0.0.4:5173"
+	  "https://nexora-self-six.vercel.app"
 	  ],
 	credentials: true
 }));
