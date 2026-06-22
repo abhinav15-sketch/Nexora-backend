@@ -19,8 +19,4 @@ app.use(cookieParser())
 app.use("/api/auth", authRoutes)
 app.use("/api/ai/chat", aiChatRoutes)
 
-app.get("/", (req, res) => {
-  res.send("Hello backend deployed")
-})
-
 module.exports = app
