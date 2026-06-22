@@ -4,7 +4,8 @@
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js",
-		"dev": "nodemon server.jz"
+		"dev": "nodemon server.js",
+		"push": "git add . && git commit -m \"Update\" && git push"
 	},
 	"dependencies": {
 		"@google/genai": "^2.8.0",
