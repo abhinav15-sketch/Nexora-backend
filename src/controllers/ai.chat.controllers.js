@@ -81,7 +81,11 @@ async function generateResponse (req, res) {
 	  console.error(error)
 	  return res.status(500).json({
 	    error: "Something went wrong",
-	    error_message: error
+	    error_message: {
+	      name: error.name,
+	      status: error.status,
+	      message: error.message
+	    }
 	  })
 	}
 }
